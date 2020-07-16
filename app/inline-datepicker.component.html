@@ -1,0 +1,11 @@
+
+<bs-datepicker-inline 
+  [bsValue]="dateSelected" 
+  (bsValueChange)="onValueChange($event)"
+  [dateCustomClasses]="selectedClass"
+  >
+</bs-datepicker-inline>
+
+<pre class="mt-3">
+{{dateSelected|json}}
+</pre>
